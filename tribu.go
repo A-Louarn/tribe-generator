@@ -268,7 +268,7 @@ func main() {
             }
 
             for i := 0; i < number_of_people_joining_tribe; i++ {
-                person := birth(current_year - (rand.Intn(10) + 20), nil)
+                person := birth(year - (rand.Intn(10) + 20), nil)
                 fmt.Println("joining tribe:", info(person))
                 tribe = append(tribe, person)
             }
